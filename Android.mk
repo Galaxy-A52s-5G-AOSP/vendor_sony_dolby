@@ -7,3 +7,15 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),dolby)
 
 endif
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := daxService
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/system_ext/priv-app/daxService/daxService.apk
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SYSTEM_EXT_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)

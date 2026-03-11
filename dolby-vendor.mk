@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/dolby/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
 
 PRODUCT_PACKAGES += \
+    daxService \
     libdapparamstorage \
     libdlbpreg \
     libdlbvol \
